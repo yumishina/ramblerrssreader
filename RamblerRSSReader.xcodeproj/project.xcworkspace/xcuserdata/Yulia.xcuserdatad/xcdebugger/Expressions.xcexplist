@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "__33-[NewsListInteractor findAllNews]_block_invoke15:NewsListInteractor.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.output">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[NewsDetailsViewController setNewsTitle:]:NewsDetailsViewController.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[NewsDetailsInteractor findNewsDetails:]:NewsDetailsInteractor.m">
+      </ContextState>
+      <ContextState
+         contextName = "__29-[LentaNewsManager loadNews:]_block_invoke:LentaNewsManager.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[NewsListViewController viewDidLoad]:NewsListViewController.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[LentaNewsManager parser:didStartElement:namespaceURI:qualifiedName:attributes:]:LentaNewsManager.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "activeNews.newsImageUrl">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

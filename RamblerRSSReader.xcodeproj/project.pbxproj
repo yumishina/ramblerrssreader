@@ -1,0 +1,777 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B245CAEF1B8C8EDD00BA8F0F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B245CAEE1B8C8EDD00BA8F0F /* main.m */; };
+		B245CAF21B8C8EDD00BA8F0F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B245CAF11B8C8EDD00BA8F0F /* AppDelegate.m */; };
+		B245CAF81B8C8EDD00BA8F0F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B245CAF61B8C8EDD00BA8F0F /* Main.storyboard */; };
+		B245CAFA1B8C8EDD00BA8F0F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B245CAF91B8C8EDD00BA8F0F /* Images.xcassets */; };
+		B245CAFD1B8C8EDD00BA8F0F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B245CAFB1B8C8EDD00BA8F0F /* LaunchScreen.xib */; };
+		B245CB091B8C8EDE00BA8F0F /* RamblerRSSReaderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B245CB081B8C8EDE00BA8F0F /* RamblerRSSReaderTests.m */; };
+		B245CB3B1B92204500BA8F0F /* NewsItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B245CB3A1B92204500BA8F0F /* NewsItem.m */; };
+		B245CB3F1B9220A600BA8F0F /* NewsItemsDataStore.m in Sources */ = {isa = PBXBuildFile; fileRef = B245CB3E1B9220A600BA8F0F /* NewsItemsDataStore.m */; };
+		B245CB501B92225900BA8F0F /* GazetaNewsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B245CB4D1B92225900BA8F0F /* GazetaNewsManager.m */; };
+		B245CB511B92225900BA8F0F /* LentaNewsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B245CB4F1B92225900BA8F0F /* LentaNewsManager.m */; };
+		B245CB551B92229500BA8F0F /* NewsListInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = B245CB531B92229500BA8F0F /* NewsListInteractor.m */; };
+		B245CB611B92236700BA8F0F /* NewsListData.m in Sources */ = {isa = PBXBuildFile; fileRef = B245CB5A1B92236700BA8F0F /* NewsListData.m */; };
+		B245CB621B92236700BA8F0F /* NewsListDataCollector.m in Sources */ = {isa = PBXBuildFile; fileRef = B245CB5C1B92236700BA8F0F /* NewsListDataCollector.m */; };
+		B245CB631B92236700BA8F0F /* NewsListItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B245CB5E1B92236700BA8F0F /* NewsListItem.m */; };
+		B245CB641B92236700BA8F0F /* NewsListPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = B245CB601B92236700BA8F0F /* NewsListPresenter.m */; };
+		B245CB6B1B92237800BA8F0F /* NewsListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B245CB661B92237800BA8F0F /* NewsListCell.m */; };
+		B245CB6C1B92237800BA8F0F /* NewsListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B245CB671B92237800BA8F0F /* NewsListCell.xib */; };
+		B245CB6D1B92237800BA8F0F /* NewsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B245CB691B92237800BA8F0F /* NewsListViewController.m */; };
+		B245CB761B92247F00BA8F0F /* NewsDetailsInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = B245CB751B92247F00BA8F0F /* NewsDetailsInteractor.m */; };
+		B245CB7C1B922B9500BA8F0F /* NewsDetailsPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = B245CB7B1B922B9500BA8F0F /* NewsDetailsPresenter.m */; };
+		B245CB7F1B922C9500BA8F0F /* NewsDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B245CB7E1B922C9500BA8F0F /* NewsDetailsViewController.m */; };
+		B245CB841B92326600BA8F0F /* RootWireframe.m in Sources */ = {isa = PBXBuildFile; fileRef = B245CB831B92326600BA8F0F /* RootWireframe.m */; };
+		B245CB881B92395800BA8F0F /* NewsListWireframe.m in Sources */ = {isa = PBXBuildFile; fileRef = B245CB871B92395800BA8F0F /* NewsListWireframe.m */; };
+		B245CB8C1B923CBF00BA8F0F /* NewsDetailsWireframe.m in Sources */ = {isa = PBXBuildFile; fileRef = B245CB8B1B923CBF00BA8F0F /* NewsDetailsWireframe.m */; };
+		B245CB8F1B92427C00BA8F0F /* AppDependencies.m in Sources */ = {isa = PBXBuildFile; fileRef = B245CB8E1B92427C00BA8F0F /* AppDependencies.m */; };
+		B27E562F1B93510800D5EB42 /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B27E562E1B93510800D5EB42 /* libOCMock.a */; };
+		B27E56311B93552600D5EB42 /* NewsListInteractorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B27E56301B93552600D5EB42 /* NewsListInteractorTests.m */; };
+		B27E56331B936A1300D5EB42 /* NewsListPresenterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B27E56321B936A1300D5EB42 /* NewsListPresenterTests.m */; };
+		B27E56351B936FDF00D5EB42 /* NewsDetailsInteractorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B27E56341B936FDF00D5EB42 /* NewsDetailsInteractorTests.m */; };
+		B27E56371B9372D800D5EB42 /* NewsDetailsPresenterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B27E56361B9372D800D5EB42 /* NewsDetailsPresenterTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B245CB031B8C8EDE00BA8F0F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B245CAE11B8C8EDD00BA8F0F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B245CAE81B8C8EDD00BA8F0F;
+			remoteInfo = RamblerRSSReader;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B245CAE91B8C8EDD00BA8F0F /* RamblerRSSReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RamblerRSSReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B245CAED1B8C8EDD00BA8F0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B245CAEE1B8C8EDD00BA8F0F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B245CAF01B8C8EDD00BA8F0F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B245CAF11B8C8EDD00BA8F0F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B245CAF71B8C8EDD00BA8F0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B245CAF91B8C8EDD00BA8F0F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B245CAFC1B8C8EDD00BA8F0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		B245CB021B8C8EDE00BA8F0F /* RamblerRSSReaderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RamblerRSSReaderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B245CB071B8C8EDE00BA8F0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B245CB081B8C8EDE00BA8F0F /* RamblerRSSReaderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RamblerRSSReaderTests.m; sourceTree = "<group>"; };
+		B245CB391B92204500BA8F0F /* NewsItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NewsItem.h; path = Common/Model/NewsItem.h; sourceTree = "<group>"; };
+		B245CB3A1B92204500BA8F0F /* NewsItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NewsItem.m; path = Common/Model/NewsItem.m; sourceTree = "<group>"; };
+		B245CB3D1B9220A600BA8F0F /* NewsItemsDataStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NewsItemsDataStore.h; path = Common/Store/NewsItemsDataStore.h; sourceTree = "<group>"; };
+		B245CB3E1B9220A600BA8F0F /* NewsItemsDataStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NewsItemsDataStore.m; path = Common/Store/NewsItemsDataStore.m; sourceTree = "<group>"; };
+		B245CB4C1B92225900BA8F0F /* GazetaNewsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GazetaNewsManager.h; path = Modules/List/ApplicationLogic/Manager/GazetaNewsManager.h; sourceTree = "<group>"; };
+		B245CB4D1B92225900BA8F0F /* GazetaNewsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GazetaNewsManager.m; path = Modules/List/ApplicationLogic/Manager/GazetaNewsManager.m; sourceTree = "<group>"; };
+		B245CB4E1B92225900BA8F0F /* LentaNewsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LentaNewsManager.h; path = Modules/List/ApplicationLogic/Manager/LentaNewsManager.h; sourceTree = "<group>"; };
+		B245CB4F1B92225900BA8F0F /* LentaNewsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LentaNewsManager.m; path = Modules/List/ApplicationLogic/Manager/LentaNewsManager.m; sourceTree = "<group>"; };
+		B245CB521B92229500BA8F0F /* NewsListInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NewsListInteractor.h; path = Modules/List/ApplicationLogic/Interactor/NewsListInteractor.h; sourceTree = "<group>"; };
+		B245CB531B92229500BA8F0F /* NewsListInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NewsListInteractor.m; path = Modules/List/ApplicationLogic/Interactor/NewsListInteractor.m; sourceTree = "<group>"; };
+		B245CB541B92229500BA8F0F /* NewsListInteractorIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NewsListInteractorIO.h; path = Modules/List/ApplicationLogic/Interactor/NewsListInteractorIO.h; sourceTree = "<group>"; };
+		B245CB591B92236700BA8F0F /* NewsListData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NewsListData.h; path = Modules/List/UserInterface/Presenter/NewsListData.h; sourceTree = "<group>"; };
+		B245CB5A1B92236700BA8F0F /* NewsListData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NewsListData.m; path = Modules/List/UserInterface/Presenter/NewsListData.m; sourceTree = "<group>"; };
+		B245CB5B1B92236700BA8F0F /* NewsListDataCollector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NewsListDataCollector.h; path = Modules/List/UserInterface/Presenter/NewsListDataCollector.h; sourceTree = "<group>"; };
+		B245CB5C1B92236700BA8F0F /* NewsListDataCollector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NewsListDataCollector.m; path = Modules/List/UserInterface/Presenter/NewsListDataCollector.m; sourceTree = "<group>"; };
+		B245CB5D1B92236700BA8F0F /* NewsListItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NewsListItem.h; path = Modules/List/UserInterface/Presenter/NewsListItem.h; sourceTree = "<group>"; };
+		B245CB5E1B92236700BA8F0F /* NewsListItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NewsListItem.m; path = Modules/List/UserInterface/Presenter/NewsListItem.m; sourceTree = "<group>"; };
+		B245CB5F1B92236700BA8F0F /* NewsListPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NewsListPresenter.h; path = Modules/List/UserInterface/Presenter/NewsListPresenter.h; sourceTree = "<group>"; };
+		B245CB601B92236700BA8F0F /* NewsListPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NewsListPresenter.m; path = Modules/List/UserInterface/Presenter/NewsListPresenter.m; sourceTree = "<group>"; };
+		B245CB651B92237800BA8F0F /* NewsListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NewsListCell.h; path = Modules/List/UserInterface/View/NewsListCell.h; sourceTree = "<group>"; };
+		B245CB661B92237800BA8F0F /* NewsListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NewsListCell.m; path = Modules/List/UserInterface/View/NewsListCell.m; sourceTree = "<group>"; };
+		B245CB671B92237800BA8F0F /* NewsListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = NewsListCell.xib; path = Modules/List/UserInterface/View/NewsListCell.xib; sourceTree = "<group>"; };
+		B245CB681B92237800BA8F0F /* NewsListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NewsListViewController.h; path = Modules/List/UserInterface/View/NewsListViewController.h; sourceTree = "<group>"; };
+		B245CB691B92237800BA8F0F /* NewsListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NewsListViewController.m; path = Modules/List/UserInterface/View/NewsListViewController.m; sourceTree = "<group>"; };
+		B245CB6A1B92237800BA8F0F /* NewsListViewInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NewsListViewInterface.h; path = Modules/List/UserInterface/View/NewsListViewInterface.h; sourceTree = "<group>"; };
+		B245CB741B92247E00BA8F0F /* NewsDetailsInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NewsDetailsInteractor.h; path = Modules/Details/ApplicationLogic/Interactor/NewsDetailsInteractor.h; sourceTree = "<group>"; };
+		B245CB751B92247F00BA8F0F /* NewsDetailsInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NewsDetailsInteractor.m; path = Modules/Details/ApplicationLogic/Interactor/NewsDetailsInteractor.m; sourceTree = "<group>"; };
+		B245CB771B9224C900BA8F0F /* NewsDetailsInteractorIO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NewsDetailsInteractorIO.h; path = Modules/Details/ApplicationLogic/Interactor/NewsDetailsInteractorIO.h; sourceTree = "<group>"; };
+		B245CB7A1B922B9500BA8F0F /* NewsDetailsPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NewsDetailsPresenter.h; path = Modules/Details/UserInterface/Presenter/NewsDetailsPresenter.h; sourceTree = "<group>"; };
+		B245CB7B1B922B9500BA8F0F /* NewsDetailsPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NewsDetailsPresenter.m; path = Modules/Details/UserInterface/Presenter/NewsDetailsPresenter.m; sourceTree = "<group>"; };
+		B245CB7D1B922C9500BA8F0F /* NewsDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NewsDetailsViewController.h; path = Modules/Details/UserInterface/View/NewsDetailsViewController.h; sourceTree = "<group>"; };
+		B245CB7E1B922C9500BA8F0F /* NewsDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NewsDetailsViewController.m; path = Modules/Details/UserInterface/View/NewsDetailsViewController.m; sourceTree = "<group>"; };
+		B245CB801B922CBA00BA8F0F /* NewsDetailsViewInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NewsDetailsViewInterface.h; path = Modules/Details/UserInterface/View/NewsDetailsViewInterface.h; sourceTree = "<group>"; };
+		B245CB821B92326600BA8F0F /* RootWireframe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RootWireframe.h; path = Common/View/RootWireframe.h; sourceTree = "<group>"; };
+		B245CB831B92326600BA8F0F /* RootWireframe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RootWireframe.m; path = Common/View/RootWireframe.m; sourceTree = "<group>"; };
+		B245CB861B92395800BA8F0F /* NewsListWireframe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NewsListWireframe.h; path = Modules/List/UserInterface/Wireframe/NewsListWireframe.h; sourceTree = "<group>"; };
+		B245CB871B92395800BA8F0F /* NewsListWireframe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NewsListWireframe.m; path = Modules/List/UserInterface/Wireframe/NewsListWireframe.m; sourceTree = "<group>"; };
+		B245CB8A1B923CBF00BA8F0F /* NewsDetailsWireframe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NewsDetailsWireframe.h; path = Modules/Details/UserInterface/Wireframe/NewsDetailsWireframe.h; sourceTree = "<group>"; };
+		B245CB8B1B923CBF00BA8F0F /* NewsDetailsWireframe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NewsDetailsWireframe.m; path = Modules/Details/UserInterface/Wireframe/NewsDetailsWireframe.m; sourceTree = "<group>"; };
+		B245CB8D1B92427C00BA8F0F /* AppDependencies.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDependencies.h; sourceTree = "<group>"; };
+		B245CB8E1B92427C00BA8F0F /* AppDependencies.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDependencies.m; sourceTree = "<group>"; };
+		B245CB911B92463100BA8F0F /* NewsListModuleInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NewsListModuleInterface.h; path = Modules/List/ModuleInterface/NewsListModuleInterface.h; sourceTree = "<group>"; };
+		B245CB931B92546900BA8F0F /* NewsDetailsModuleInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NewsDetailsModuleInterface.h; path = Modules/Details/ModuleInterface/NewsDetailsModuleInterface.h; sourceTree = "<group>"; };
+		B27E562E1B93510800D5EB42 /* libOCMock.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libOCMock.a; path = OCMock/libOCMock.a; sourceTree = "<group>"; };
+		B27E56301B93552600D5EB42 /* NewsListInteractorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsListInteractorTests.m; sourceTree = "<group>"; };
+		B27E56321B936A1300D5EB42 /* NewsListPresenterTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsListPresenterTests.m; sourceTree = "<group>"; };
+		B27E56341B936FDF00D5EB42 /* NewsDetailsInteractorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsDetailsInteractorTests.m; sourceTree = "<group>"; };
+		B27E56361B9372D800D5EB42 /* NewsDetailsPresenterTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsDetailsPresenterTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B245CAE61B8C8EDD00BA8F0F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B245CAFF1B8C8EDE00BA8F0F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B27E562F1B93510800D5EB42 /* libOCMock.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B245CAE01B8C8EDD00BA8F0F = {
+			isa = PBXGroup;
+			children = (
+				B27E562E1B93510800D5EB42 /* libOCMock.a */,
+				B245CAEB1B8C8EDD00BA8F0F /* RamblerRSSReader */,
+				B245CB051B8C8EDE00BA8F0F /* RamblerRSSReaderTests */,
+				B245CAEA1B8C8EDD00BA8F0F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B245CAEA1B8C8EDD00BA8F0F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B245CAE91B8C8EDD00BA8F0F /* RamblerRSSReader.app */,
+				B245CB021B8C8EDE00BA8F0F /* RamblerRSSReaderTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B245CAEB1B8C8EDD00BA8F0F /* RamblerRSSReader */ = {
+			isa = PBXGroup;
+			children = (
+				B245CB471B92211800BA8F0F /* Modules */,
+				B245CB371B921F9900BA8F0F /* Common */,
+				B245CAF01B8C8EDD00BA8F0F /* AppDelegate.h */,
+				B245CAF11B8C8EDD00BA8F0F /* AppDelegate.m */,
+				B245CB8D1B92427C00BA8F0F /* AppDependencies.h */,
+				B245CB8E1B92427C00BA8F0F /* AppDependencies.m */,
+				B245CAF61B8C8EDD00BA8F0F /* Main.storyboard */,
+				B245CAF91B8C8EDD00BA8F0F /* Images.xcassets */,
+				B245CAFB1B8C8EDD00BA8F0F /* LaunchScreen.xib */,
+				B245CAEC1B8C8EDD00BA8F0F /* Supporting Files */,
+			);
+			path = RamblerRSSReader;
+			sourceTree = "<group>";
+		};
+		B245CAEC1B8C8EDD00BA8F0F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B245CAED1B8C8EDD00BA8F0F /* Info.plist */,
+				B245CAEE1B8C8EDD00BA8F0F /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B245CB051B8C8EDE00BA8F0F /* RamblerRSSReaderTests */ = {
+			isa = PBXGroup;
+			children = (
+				B245CB081B8C8EDE00BA8F0F /* RamblerRSSReaderTests.m */,
+				B27E56301B93552600D5EB42 /* NewsListInteractorTests.m */,
+				B27E56321B936A1300D5EB42 /* NewsListPresenterTests.m */,
+				B27E56341B936FDF00D5EB42 /* NewsDetailsInteractorTests.m */,
+				B27E56361B9372D800D5EB42 /* NewsDetailsPresenterTests.m */,
+				B245CB061B8C8EDE00BA8F0F /* Supporting Files */,
+			);
+			path = RamblerRSSReaderTests;
+			sourceTree = "<group>";
+		};
+		B245CB061B8C8EDE00BA8F0F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B245CB071B8C8EDE00BA8F0F /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B245CB371B921F9900BA8F0F /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				B245CB811B92322600BA8F0F /* View */,
+				B245CB3C1B92207200BA8F0F /* Store */,
+				B245CB381B921FF100BA8F0F /* Model */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		B245CB381B921FF100BA8F0F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B245CB391B92204500BA8F0F /* NewsItem.h */,
+				B245CB3A1B92204500BA8F0F /* NewsItem.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		B245CB3C1B92207200BA8F0F /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				B245CB3D1B9220A600BA8F0F /* NewsItemsDataStore.h */,
+				B245CB3E1B9220A600BA8F0F /* NewsItemsDataStore.m */,
+			);
+			name = Store;
+			sourceTree = "<group>";
+		};
+		B245CB471B92211800BA8F0F /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				B245CB6E1B9223AB00BA8F0F /* Details */,
+				B245CB481B92213D00BA8F0F /* List */,
+			);
+			name = Modules;
+			sourceTree = "<group>";
+		};
+		B245CB481B92213D00BA8F0F /* List */ = {
+			isa = PBXGroup;
+			children = (
+				B245CB901B9245DF00BA8F0F /* ModuleInterface */,
+				B245CB561B9222C600BA8F0F /* UserInterface */,
+				B245CB491B92222C00BA8F0F /* ApplicationLogic */,
+			);
+			name = List;
+			sourceTree = "<group>";
+		};
+		B245CB491B92222C00BA8F0F /* ApplicationLogic */ = {
+			isa = PBXGroup;
+			children = (
+				B245CB4B1B92224100BA8F0F /* Manager */,
+				B245CB4A1B92223800BA8F0F /* Interactor */,
+			);
+			name = ApplicationLogic;
+			sourceTree = "<group>";
+		};
+		B245CB4A1B92223800BA8F0F /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				B245CB521B92229500BA8F0F /* NewsListInteractor.h */,
+				B245CB531B92229500BA8F0F /* NewsListInteractor.m */,
+				B245CB541B92229500BA8F0F /* NewsListInteractorIO.h */,
+			);
+			name = Interactor;
+			sourceTree = "<group>";
+		};
+		B245CB4B1B92224100BA8F0F /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				B245CB4C1B92225900BA8F0F /* GazetaNewsManager.h */,
+				B245CB4D1B92225900BA8F0F /* GazetaNewsManager.m */,
+				B245CB4E1B92225900BA8F0F /* LentaNewsManager.h */,
+				B245CB4F1B92225900BA8F0F /* LentaNewsManager.m */,
+			);
+			name = Manager;
+			sourceTree = "<group>";
+		};
+		B245CB561B9222C600BA8F0F /* UserInterface */ = {
+			isa = PBXGroup;
+			children = (
+				B245CB851B92391500BA8F0F /* Wireframe */,
+				B245CB581B92235000BA8F0F /* View */,
+				B245CB571B92234700BA8F0F /* Presenter */,
+			);
+			name = UserInterface;
+			sourceTree = "<group>";
+		};
+		B245CB571B92234700BA8F0F /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				B245CB591B92236700BA8F0F /* NewsListData.h */,
+				B245CB5A1B92236700BA8F0F /* NewsListData.m */,
+				B245CB5B1B92236700BA8F0F /* NewsListDataCollector.h */,
+				B245CB5C1B92236700BA8F0F /* NewsListDataCollector.m */,
+				B245CB5D1B92236700BA8F0F /* NewsListItem.h */,
+				B245CB5E1B92236700BA8F0F /* NewsListItem.m */,
+				B245CB5F1B92236700BA8F0F /* NewsListPresenter.h */,
+				B245CB601B92236700BA8F0F /* NewsListPresenter.m */,
+			);
+			name = Presenter;
+			sourceTree = "<group>";
+		};
+		B245CB581B92235000BA8F0F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B245CB651B92237800BA8F0F /* NewsListCell.h */,
+				B245CB661B92237800BA8F0F /* NewsListCell.m */,
+				B245CB671B92237800BA8F0F /* NewsListCell.xib */,
+				B245CB681B92237800BA8F0F /* NewsListViewController.h */,
+				B245CB691B92237800BA8F0F /* NewsListViewController.m */,
+				B245CB6A1B92237800BA8F0F /* NewsListViewInterface.h */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		B245CB6E1B9223AB00BA8F0F /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				B245CB921B92543B00BA8F0F /* ModuleInterface */,
+				B245CB701B92242100BA8F0F /* UserInterface */,
+				B245CB6F1B92240C00BA8F0F /* ApplicationLogic */,
+			);
+			name = Details;
+			sourceTree = "<group>";
+		};
+		B245CB6F1B92240C00BA8F0F /* ApplicationLogic */ = {
+			isa = PBXGroup;
+			children = (
+				B245CB731B92244400BA8F0F /* Interactor */,
+			);
+			name = ApplicationLogic;
+			sourceTree = "<group>";
+		};
+		B245CB701B92242100BA8F0F /* UserInterface */ = {
+			isa = PBXGroup;
+			children = (
+				B245CB891B923C8F00BA8F0F /* Wireframe */,
+				B245CB721B92243700BA8F0F /* View */,
+				B245CB711B92242D00BA8F0F /* Presenter */,
+			);
+			name = UserInterface;
+			sourceTree = "<group>";
+		};
+		B245CB711B92242D00BA8F0F /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				B245CB7A1B922B9500BA8F0F /* NewsDetailsPresenter.h */,
+				B245CB7B1B922B9500BA8F0F /* NewsDetailsPresenter.m */,
+			);
+			name = Presenter;
+			sourceTree = "<group>";
+		};
+		B245CB721B92243700BA8F0F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B245CB7D1B922C9500BA8F0F /* NewsDetailsViewController.h */,
+				B245CB7E1B922C9500BA8F0F /* NewsDetailsViewController.m */,
+				B245CB801B922CBA00BA8F0F /* NewsDetailsViewInterface.h */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		B245CB731B92244400BA8F0F /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				B245CB741B92247E00BA8F0F /* NewsDetailsInteractor.h */,
+				B245CB751B92247F00BA8F0F /* NewsDetailsInteractor.m */,
+				B245CB771B9224C900BA8F0F /* NewsDetailsInteractorIO.h */,
+			);
+			name = Interactor;
+			sourceTree = "<group>";
+		};
+		B245CB811B92322600BA8F0F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B245CB821B92326600BA8F0F /* RootWireframe.h */,
+				B245CB831B92326600BA8F0F /* RootWireframe.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		B245CB851B92391500BA8F0F /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+				B245CB861B92395800BA8F0F /* NewsListWireframe.h */,
+				B245CB871B92395800BA8F0F /* NewsListWireframe.m */,
+			);
+			name = Wireframe;
+			sourceTree = "<group>";
+		};
+		B245CB891B923C8F00BA8F0F /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+				B245CB8A1B923CBF00BA8F0F /* NewsDetailsWireframe.h */,
+				B245CB8B1B923CBF00BA8F0F /* NewsDetailsWireframe.m */,
+			);
+			name = Wireframe;
+			sourceTree = "<group>";
+		};
+		B245CB901B9245DF00BA8F0F /* ModuleInterface */ = {
+			isa = PBXGroup;
+			children = (
+				B245CB911B92463100BA8F0F /* NewsListModuleInterface.h */,
+			);
+			name = ModuleInterface;
+			sourceTree = "<group>";
+		};
+		B245CB921B92543B00BA8F0F /* ModuleInterface */ = {
+			isa = PBXGroup;
+			children = (
+				B245CB931B92546900BA8F0F /* NewsDetailsModuleInterface.h */,
+			);
+			name = ModuleInterface;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B245CAE81B8C8EDD00BA8F0F /* RamblerRSSReader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B245CB0C1B8C8EDE00BA8F0F /* Build configuration list for PBXNativeTarget "RamblerRSSReader" */;
+			buildPhases = (
+				B245CAE51B8C8EDD00BA8F0F /* Sources */,
+				B245CAE61B8C8EDD00BA8F0F /* Frameworks */,
+				B245CAE71B8C8EDD00BA8F0F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RamblerRSSReader;
+			productName = RamblerRSSReader;
+			productReference = B245CAE91B8C8EDD00BA8F0F /* RamblerRSSReader.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B245CB011B8C8EDE00BA8F0F /* RamblerRSSReaderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B245CB0F1B8C8EDE00BA8F0F /* Build configuration list for PBXNativeTarget "RamblerRSSReaderTests" */;
+			buildPhases = (
+				B245CAFE1B8C8EDE00BA8F0F /* Sources */,
+				B245CAFF1B8C8EDE00BA8F0F /* Frameworks */,
+				B245CB001B8C8EDE00BA8F0F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B245CB041B8C8EDE00BA8F0F /* PBXTargetDependency */,
+			);
+			name = RamblerRSSReaderTests;
+			productName = RamblerRSSReaderTests;
+			productReference = B245CB021B8C8EDE00BA8F0F /* RamblerRSSReaderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B245CAE11B8C8EDD00BA8F0F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = yulia;
+				TargetAttributes = {
+					B245CAE81B8C8EDD00BA8F0F = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					B245CB011B8C8EDE00BA8F0F = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = B245CAE81B8C8EDD00BA8F0F;
+					};
+				};
+			};
+			buildConfigurationList = B245CAE41B8C8EDD00BA8F0F /* Build configuration list for PBXProject "RamblerRSSReader" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B245CAE01B8C8EDD00BA8F0F;
+			productRefGroup = B245CAEA1B8C8EDD00BA8F0F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B245CAE81B8C8EDD00BA8F0F /* RamblerRSSReader */,
+				B245CB011B8C8EDE00BA8F0F /* RamblerRSSReaderTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B245CAE71B8C8EDD00BA8F0F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B245CAF81B8C8EDD00BA8F0F /* Main.storyboard in Resources */,
+				B245CB6C1B92237800BA8F0F /* NewsListCell.xib in Resources */,
+				B245CAFD1B8C8EDD00BA8F0F /* LaunchScreen.xib in Resources */,
+				B245CAFA1B8C8EDD00BA8F0F /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B245CB001B8C8EDE00BA8F0F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B245CAE51B8C8EDD00BA8F0F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B245CB641B92236700BA8F0F /* NewsListPresenter.m in Sources */,
+				B245CB611B92236700BA8F0F /* NewsListData.m in Sources */,
+				B245CB761B92247F00BA8F0F /* NewsDetailsInteractor.m in Sources */,
+				B245CB6B1B92237800BA8F0F /* NewsListCell.m in Sources */,
+				B245CB8F1B92427C00BA8F0F /* AppDependencies.m in Sources */,
+				B245CB631B92236700BA8F0F /* NewsListItem.m in Sources */,
+				B245CB511B92225900BA8F0F /* LentaNewsManager.m in Sources */,
+				B245CB6D1B92237800BA8F0F /* NewsListViewController.m in Sources */,
+				B245CB7C1B922B9500BA8F0F /* NewsDetailsPresenter.m in Sources */,
+				B245CB841B92326600BA8F0F /* RootWireframe.m in Sources */,
+				B245CB7F1B922C9500BA8F0F /* NewsDetailsViewController.m in Sources */,
+				B245CB3B1B92204500BA8F0F /* NewsItem.m in Sources */,
+				B245CAF21B8C8EDD00BA8F0F /* AppDelegate.m in Sources */,
+				B245CB3F1B9220A600BA8F0F /* NewsItemsDataStore.m in Sources */,
+				B245CB8C1B923CBF00BA8F0F /* NewsDetailsWireframe.m in Sources */,
+				B245CB881B92395800BA8F0F /* NewsListWireframe.m in Sources */,
+				B245CB621B92236700BA8F0F /* NewsListDataCollector.m in Sources */,
+				B245CAEF1B8C8EDD00BA8F0F /* main.m in Sources */,
+				B245CB551B92229500BA8F0F /* NewsListInteractor.m in Sources */,
+				B245CB501B92225900BA8F0F /* GazetaNewsManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B245CAFE1B8C8EDE00BA8F0F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B27E56351B936FDF00D5EB42 /* NewsDetailsInteractorTests.m in Sources */,
+				B27E56371B9372D800D5EB42 /* NewsDetailsPresenterTests.m in Sources */,
+				B27E56331B936A1300D5EB42 /* NewsListPresenterTests.m in Sources */,
+				B245CB091B8C8EDE00BA8F0F /* RamblerRSSReaderTests.m in Sources */,
+				B27E56311B93552600D5EB42 /* NewsListInteractorTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B245CB041B8C8EDE00BA8F0F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B245CAE81B8C8EDD00BA8F0F /* RamblerRSSReader */;
+			targetProxy = B245CB031B8C8EDE00BA8F0F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B245CAF61B8C8EDD00BA8F0F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B245CAF71B8C8EDD00BA8F0F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B245CAFB1B8C8EDD00BA8F0F /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B245CAFC1B8C8EDD00BA8F0F /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B245CB0A1B8C8EDE00BA8F0F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B245CB0B1B8C8EDE00BA8F0F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B245CB0D1B8C8EDE00BA8F0F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = RamblerRSSReader/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B245CB0E1B8C8EDE00BA8F0F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = RamblerRSSReader/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B245CB101B8C8EDE00BA8F0F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(PROJECT_DIR)/OCMock",
+				);
+				INFOPLIST_FILE = RamblerRSSReaderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/OCMock",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					XCTest,
+					"-ObjC",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RamblerRSSReader.app/RamblerRSSReader";
+			};
+			name = Debug;
+		};
+		B245CB111B8C8EDE00BA8F0F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(PROJECT_DIR)/OCMock",
+				);
+				INFOPLIST_FILE = RamblerRSSReaderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/OCMock",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					XCTest,
+					"-ObjC",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RamblerRSSReader.app/RamblerRSSReader";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B245CAE41B8C8EDD00BA8F0F /* Build configuration list for PBXProject "RamblerRSSReader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B245CB0A1B8C8EDE00BA8F0F /* Debug */,
+				B245CB0B1B8C8EDE00BA8F0F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B245CB0C1B8C8EDE00BA8F0F /* Build configuration list for PBXNativeTarget "RamblerRSSReader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B245CB0D1B8C8EDE00BA8F0F /* Debug */,
+				B245CB0E1B8C8EDE00BA8F0F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B245CB0F1B8C8EDE00BA8F0F /* Build configuration list for PBXNativeTarget "RamblerRSSReaderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B245CB101B8C8EDE00BA8F0F /* Debug */,
+				B245CB111B8C8EDE00BA8F0F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B245CAE11B8C8EDD00BA8F0F /* Project object */;
+}
